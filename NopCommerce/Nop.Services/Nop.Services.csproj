@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="Blogs\BlogService.cs" />
     <Compile Include="Blogs\IBlogService.cs" />
-    <Compile Include="IDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

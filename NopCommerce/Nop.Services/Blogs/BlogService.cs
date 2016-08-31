@@ -25,6 +25,11 @@ namespace Nop.Services.Blogs
             _blogPostRepository.Delete(blogPost);
         }
 
+        public IQueryable<BlogPost> GetAllBlogs()
+        {
+            return _blogPostRepository.Table;
+        }
+
         public BlogPost GetBlogPostById(int blogPostId)
         {
             if (blogPostId == 0)

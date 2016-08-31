@@ -18,7 +18,7 @@ namespace Nop.Data.Migrations
         protected override void Seed(Nop.Data.NopObjectContext context)
         {
             //  This method will be called after migrating to the latest version.
-            InstallBlogPosts(context);
+           // InstallBlogPosts(context);
         }
 
         private void InstallBlogPosts(Nop.Data.NopObjectContext context)
