@@ -10,7 +10,10 @@ namespace Nop.Data
         public NopObjectContext()
             :base("name=MyNopConnectionString")
         {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<NopObjectContext, Migrations.Configuration>("MyNopConnectionString"));
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<NopObjectContext,
+                Migrations.Configuration>("MyNopConnectionString"));
+            Configuration.LazyLoadingEnabled = true;
+            Configuration.ProxyCreationEnabled = true;
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
